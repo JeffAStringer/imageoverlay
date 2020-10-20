@@ -1,0 +1,174 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "firstimage second third"
+    "firstimage fouth third"
+    "fifth fouth third"
+    "sixth fouth nineth"
+    "sixth eighth nineth"
+    "seventh eighth tenth"
+    "eleventh twelfth thirteenth"
+    "eleventh fourteenth thirteenth"
+    "fifteenth fourteenth seventeenth"
+    "fifteenth sixteenth seventeenth";
+
+}
+.image {
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+image{position: relative;
+            width: 100%;
+            height: 100%;
+}
+
+.firstimage { grid-area: firstimage;position: relative;
+  width: 100%;
+  height: 100%;
+}
+.second { grid-area: second; position: relative;
+  width: 100%;
+  height: 100%;}
+.third { grid-area: third; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fouth { grid-area: fouth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fifth { grid-area: fifth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sixth { grid-area: sixth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.seventh { grid-area: seventh; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.eighth { grid-area: eighth;position: relative;
+  width: 100%;
+  height: 100%;
+}
+.nineth { grid-area: nineth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tenth { grid-area: tenth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.eleventh { grid-area: eleventh; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.twelfth { grid-area: twelfth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.thirteenth { grid-area: thirteenth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fourteenth { grid-area: fourteenth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fifteenth { grid-area: fifteenth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sixteenth { grid-area: sixteenth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+.seventeenth { grid-area: seventeenth; position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+ 
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    
+  }
+  
+  .firstimage:hover .overlay{
+    opacity: 1;
+  }
+  .second:hover .overlay{
+    opacity: 1;
+  }
+  .third:hover .overlay{
+    opacity: 1;
+  }
+  .fouth:hover .overlay{
+    opacity: 1;
+  }
+  .fifth:hover .overlay{
+    opacity: 1;
+  }
+  .sixth:hover .overlay{
+    opacity: 1;
+  }
+  .seventh:hover .overlay{
+    opacity: 1;
+  }
+  .eighth:hover .overlay{
+    opacity: 1;
+  }
+  .nineth:hover .overlay{
+    opacity: 1;
+  }
+  .tenth:hover .overlay{
+    opacity: 1;
+  }
+  .eleventh:hover .overlay{
+    opacity: 1;
+  }
+  .twelfth:hover .overlay{
+    opacity: 1;
+  }
+  .thirteenth:hover .overlay{
+    opacity: 1;
+  }
+  .fourteenth:hover .overlay{
+    opacity: 1;
+  }
+  .fifteenth:hover .overlay{
+    opacity: 1;
+  }
+  .sixteenth:hover .overlay{
+    opacity: 1;
+  }
+  .seventeenth:hover .overlay{
+    opacity: 1;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
